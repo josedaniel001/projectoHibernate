@@ -6,14 +6,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 import libs.utils.locals.RestResponse;
 
+
 @RestController
 @RequestMapping("pruebasWSDL")
 public class PruebasController {
 
 	@GetMapping("listar")
 	public RestResponse lista() {
-		RestResponse response = new RestResponse();
-		response.setData("Data a mostrar en el response");
+		RestResponse response = new RestResponse();		
+		response.setData("Resultado del response");
 		return response;
 	}
 }
